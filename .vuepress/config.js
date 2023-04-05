@@ -3,7 +3,7 @@ module.exports = {
   // base: '/PragueBlockchainWeek/',
   // Leave the base as '/' if serving the content from a custom domain
   base: '/',
-  title: 'Prague GM Events',
+  title: 'Amsterdam GM Events',
   head: [
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['link', { rel: 'icon', href: '/logo-black.png' }],
@@ -20,8 +20,12 @@ module.exports = {
         link: '/calendar/'
       },
       {
-        text: 'Submit an Event',
-        link: 'https://cf23uhv4kuq.typeform.com/to/pVgp6whd'
+        text: 'ETHDam',
+        link: 'https://www.ethdam.com/'
+      },
+      {
+        text: 'Submit Event',
+        link: 'https://gmevents.typeform.com/amsterdam'
       }
     ],
     logo: 'logo.png',
