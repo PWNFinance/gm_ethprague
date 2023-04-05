@@ -12,4 +12,4 @@ This repository contains the code for the website, which can be reached at
 For submitting new events please do either of these:
 1) create a PR 
 2) create an issue 
-3) submit a form: https://cf23uhv4kuq.typeform.com/to/pVgp6whd
+3) submit a form: https://gmevents.typeform.com/amsterdam
