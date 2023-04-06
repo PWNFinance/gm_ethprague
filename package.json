@@ -10,11 +10,16 @@
   },
   "homepage": "https://prague.gm.events",
   "scripts": {
+    "@types/file-saver": "^2.0.5",
     "dev": "vuepress dev",
     "build": "vuepress build"
   },
   "devDependencies": {
     "debounce": "^1.2.0",
-    "vuepress": "^0.12.0"
+    "vuepress": "^1.9.9"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "ics": "^3.1.0"
   }
 }

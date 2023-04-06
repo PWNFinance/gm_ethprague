@@ -3,13 +3,17 @@
     <!-- Date and time -->
     <div class="event-preview_left-column">
       <div class="event-preview_date">
-        <DateTime :date="event.frontmatter.date" :endDate="event.frontmatter.endDate" :time="event.frontmatter.time"
-          :endTime="event.frontmatter.endTime"/>
+        <div class="event-preview_date-add-to-calendar-and-event-time">
+          <DateTime :date="event.frontmatter.date" :endDate="event.frontmatter.endDate" :time="event.frontmatter.time"
+            :endTime="event.frontmatter.endTime"/>
+          <CalendarHelper :event="event" class="event-preview_calendar-helper"/>
+        </div>
         <Badge slot="after" :text="event.frontmatter.category" />
 
         <Badge v-if="event.frontmatter.featured" slot="after" :text="'TOP'" />
       </div>
 
+      
       <div class="event-preview_toggle-description-visibility--mobile">
         <img v-if="isMaximazed === false" height="35" width="35" src="./../public/plus.svg" alt="open" @click="isMaximazed = true"/>
         <img v-else  src="./../public/minus.svg" height="35"  width="35" alt="close" @click="isMaximazed = false"/>
@@ -21,14 +25,15 @@
       <div class="event-preview_content">
         <!-- Event's name -->
         <h2 class="event-preview_name">
-          <a class="event-preview_name-link":href="$withBase(event.path)">{{ event.frontmatter.name }}</a>
+          <a class="event-preview_name-link" :href="$withBase(event.path)">{{ event.frontmatter.name }}</a>
         </h2>
-    
+        
         <!-- Event's description -->
         <p class="event-preview_description" v-if="isMaximazed" >{{ event.frontmatter.description }}</p>
       </div>
-
+      
       <div class="event-preview_toggle-description-visibility--desktop">
+        
         <img v-if="isMaximazed === false" height="35" width="35" src="./../public/plus.svg" alt="open" @click="isMaximazed = true"/>
         <img v-else  src="./../public/minus.svg" height="35"  width="35" alt="close" @click="isMaximazed = false"/>
       </div>
@@ -39,21 +44,24 @@
 </template>
 
 <script lang="ts">
-import DateTime from './Event/DateTime.vue'
+import CalendarHelper from "./CalendarHelper.vue";
+import DateTime from "./Event/DateTime.vue";
+import Badge from '../theme/Badge.vue'
+
 export default {
-  components: { DateTime },
-  name: "Button",
+  components: { DateTime, CalendarHelper, Badge },
+  name: "EventPreview",
   props: {
     event: {
       type: Object,
       default: null,
     },
   },
-  data () {
+  data() {
     return {
       isMaximazed: false,
-    }
-  }
+    };
+  },
 };
 </script>
 
@@ -116,5 +124,11 @@ export default {
 
     &_name
       margin: 0.7rem 0 1.5rem 0
-</style>
+.event-preview_date-add-to-calendar-and-event-time
+  display flex
+  flex-wrap: wrap;
+  gap 0.5rem
 
+.event-preview_calendar-helper
+  margin-top 1.5rem
+</style>

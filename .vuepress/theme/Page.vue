@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Content :custom="false"/>
+    <Content :custom="false" class="content"/>
     <div class="page-edit">
       <div class="edit-link" v-if="editLink">
         <a :href="editLink" target="_blank" rel="noopener noreferrer">{{ editLinkText }}</a>

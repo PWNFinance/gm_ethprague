@@ -63,7 +63,7 @@ export default {
       let year = date.getUTCFullYear()
 
       // The full date
-      let datetime = `${day}, ${date.getUTCDate()}`
+      let datetime = `${day} ${date.getUTCDate()}`
 
       // Last date of the event
       let endDate = this.endDate || this.$page.frontmatter.endDate
@@ -73,7 +73,7 @@ export default {
         endDate = new Date(endDate)
         if (endDate.toJSON() !== date.toJSON()) {
           day = this.dayNames[endDate.getUTCDay()]
-          datetime += ` - ${day}, ${endDate.getUTCDate()}`
+          datetime += ` - ${day} ${endDate.getUTCDate()}`
         }
       }
 
@@ -101,13 +101,13 @@ export default {
   font-family $primaryFontFamily
   white-space: nowrap
   // font-size: 24px;
-  font-size clamp(1.2rem, calc(-0.875rem + 3.333vw), 1.5rem)
+  font-size clamp(1.2rem, calc(-0.875rem + 3.333vw), 1.4rem)
   font-weight: 600;
   line-height: clamp(25px, calc(-0.875rem + 4.333vw), 32px);
 
 .date-time__one-line
   font-family $primaryFontFamily
-  font-size clamp(1.2rem, calc(-0.875rem + 3.333vw), 1.5rem)
+  font-size clamp(1.2rem, calc(-0.875rem + 3.333vw), 1.4rem)
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0em;

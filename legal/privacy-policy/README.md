@@ -4,19 +4,19 @@ title: Privacy Policy
 
 # Privacy Policy
 
-The amsterdam.gm.events website provides information about a series of independent events organized by individuals or companies.
+The rio.gm.events website provides information about a series of independent events organized by individuals or companies.
 
 This page is used to inform website visitors regarding our policies with the
 collection, use, and disclosure of Personal Information if anyone decided to
-use our Service, the amsterdam.gm.events website.
+use our Service, the rio.gm.events website.
 
 ## Information Collection and Use
 
-We are using Plausible Analytics for collecting the number of visitors on amsterdam.gm.events. Nothing else. Plausible doesn’t use cookies and doesn’t track nor collect any personal data.
+We are using Plausible Analytics for collecting the number of visitors on rio.gm.events. Nothing else. Plausible doesn’t use cookies and doesn’t track nor collect any personal data.
 
 ## Cookies
 
-amsterdam.gm.events does not use cookies to collect information.
+rio.gm.events does not use cookies to collect information.
 
 ## Links to Other Sites
 
