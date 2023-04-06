@@ -1,32 +1,27 @@
 module.exports = {
   base: "/",
-  // title: "Rio GM Events",
-  // heading: "GM Rio 2023",
-  // dateSubheading: "22. March - 3. April 2023",
-  // subHeading:
-  //   "We're bringing the Ethereum community to Rio de Janeiro! GM events website shows you events happening in Rio and allows anyone to add and update their side event.",
-  // calendarHeading: "March 2023",
-  // submitEventLink: "https://gmevents.typeform.com/riodejaneiro",
+  title: "Amsterdam GM Events",
+  heading: "GM Amsterdam 2023",
+  dateSubheading: "15. - 21. May 2023",
+  subHeading:
+    "We're bringing the Ethereum community to Amsterdam! This website allows anyone to add and update their side event.",
+  calendarHeading: "May 2023",
+  sumbitEventLink: "https://gmevents.typeform.com/amsterdam",
   startDate: {
-    day: 22,
-    month: 3,
+    day: 15,
+    month: 5,
     year: 2023,
   },
   endDate: {
-    day: 3,
-    month: 4,
+    day: 21,
+    month: 5,
     year: 2023,
   },
   daysInFirstMonth: 31,
   startHour: 8,
   endHour: 24,
-  duarationInDays: 13,
+  duarationInDays: 7,
   dayNames: [
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
@@ -34,22 +29,15 @@ module.exports = {
     "Friday",
     "Saturday",
     "Sunday",
-    "Monday",
   ],
   layout: 0, // 0 - banner layout, 1 - venue layout
-  bannerPath: "TwitHeader_1500x5002.jpg", // only if banner layout
+  bannerPath: "ethdam.png", // only if banner layout
   venues: [
     {
-      name: "Bamba House - Catete, Rio de Janeiro",
-      desc: "EthSamba Hack will happen at the Centro de Convenções Florida located in Catete one of the historic districts of Rio de Janeiro and with access to the attached Museum of the Republic which has some of the nicest open gardens in the city. A surprise Hacker House will be announced soon!",
-      path: "EthSamba_venue.jpg",
+      name: "Paralelni Polis",
+      desc: "yay",
+      path: "logo_gm_events.svg",
     },
-    {
-      name: "ETHSamba Hacker House",
-      desc: "The Hacker House of EthSamba that will be open 24 hours from the start of the Hackathon. In it, all you need is to build your best project and take quick breaks by jumping in the pool or admiring the view!",
-      path: "ethsambahack.jpeg",
-    },
-    
   ], // only if venue layout
   head: [
     ["link", { rel: "manifest", href: "/manifest.json" }],
@@ -75,6 +63,10 @@ module.exports = {
       {
         text: "Calendar",
         link: "/calendar/",
+      },
+      {
+        text: "ETHDam",
+        link: "https://www.ethdam.com/",
       },
     ],
     logo: "logo_gm_events.svg",
