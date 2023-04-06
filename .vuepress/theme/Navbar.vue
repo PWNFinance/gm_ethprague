@@ -1,26 +1,27 @@
 <template>
-    <header class="navbar">
-<!--      <LaneAbove />-->
-      <div class="menu">
-        <router-link :to="$localePath" class="home-link">
-          <img class="logo" :src="$withBase(logo)" alt="Logo">
-        </router-link>
-        <div class="links">
-          <!-- <NavLinks class="can-hide"/> -->
-          <div
-            class="can-hide link"
-            v-for="item in this.links"
-            :key="item.link">
-            <NavLink :item="item"/>
-          </div>
-
-          <!-- <AlgoliaSearchBox v-if="isAlgoliaSearch" :options="algolia"/> -->
-          <!-- <SearchBox v-else-if="$site.themeConfig.search !== false"/> -->
+  <header class="navbar">
+    <!--      <LaneAbove />-->
+    <div class="menu">
+      <router-link :to="$localePath" class="home-link">
+        <img class="logo" :src="$withBase(logo)" alt="Logo" />
+      </router-link>
+      <div class="links">
+        <!-- <NavLinks class="can-hide"/> -->
+        <div class="can-hide link" v-for="item in this.links" :key="item.link">
+          <NavLink :item="item" />
         </div>
-        <Button class="menu_button-submit-event" buttonText="Submit Event" :to="this.config.submitEventLink" />
-        <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
+
+        <!-- <AlgoliaSearchBox v-if="isAlgoliaSearch" :options="algolia"/> -->
+        <!-- <SearchBox v-else-if="$site.themeConfig.search !== false"/> -->
       </div>
-    </header>
+      <Button
+        class="menu_button-submit-event"
+        buttonText="Submit Event"
+        :to="this.config.submitEventLink"
+      />
+      <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
+    </div>
+  </header>
 </template>
 
 <script>
@@ -99,13 +100,13 @@ export default {
 
 @media (max-width: $MQMobile)
   .navbar
-    padding 0.9rem 1.5rem
+    padding 1.3rem 1.5rem
     .links
       right 3.5rem
     .logo
       height 2rem
       min-width 2rem
-    
+
     .can-hide
       display none
 
@@ -116,5 +117,4 @@ export default {
 
     &_button-submit-event
       display block
-
 </style>
