@@ -68,7 +68,7 @@ export default {
     text-align center
 
   &_headline
-    font-size clamp(3rem, calc(-0.875rem + 8.333vw), 10.5rem)
+    font-size clamp(3rem, calc(-0.875rem + 7vw), 10.5rem)
     text-align center
     max-width 85rem
     margin-bottom 2rem
