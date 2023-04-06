@@ -270,7 +270,6 @@ $lightColor = lighten($headerColor, 90%)
 $headersTransition = all 0.25s ease-out
 
 table
-  padding-top 8rem
   width 100%
   display inline-table
   border-spacing 0
@@ -404,8 +403,13 @@ table
               writing-mode vertical-rl
               transform rotate(180deg)
 
+@media(min-width: 64em)
+  table
+    padding-top 8rem
+  .calendar_hero
+    margin-top 3rem
+
 .calendar_hero
-  margin-top 3rem
   font-size 3rem
   padding 0rem 0rem 6rem 3rem
   min-height 4rem
