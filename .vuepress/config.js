@@ -4,7 +4,7 @@ module.exports = {
   heading: "GM Amsterdam 2023",
   dateSubheading: "15. - 21. May 2023",
   subHeading:
-    "We're bringing the Ethereum community to Amsterdam! This website allows anyone to add and update their side event.",
+    "We're bringing the Ethereum community to Amsterdam! This website allows anyone to add and update their side event happening around EthDam conference.",
   calendarHeading: "May 2023",
   submitEventLink: "https://gmevents.typeform.com/amsterdam",
   startDate: {
