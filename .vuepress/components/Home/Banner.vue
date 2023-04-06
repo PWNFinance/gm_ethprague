@@ -1,6 +1,6 @@
 <template>
   <div v-if="config.layout === 0" class="banner-main">
-    <img class="banner-main_img" :src="config.bannerPath" alt="">
+    <img class="banner-main_img" :src="config.bannerPath" alt="" />
   </div>
 </template>
 
@@ -25,9 +25,8 @@ export default {
   display flex
   align-items center
   justify-content center
-  padding-top 7rem
+  padding-top $navbarHeight + 1.4rem
 
   &_img
     width 100%
-
 </style>
