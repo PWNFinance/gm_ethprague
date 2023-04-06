@@ -22,7 +22,7 @@
     <Button
       class="hero-main_button"
       buttonText="Submit Event"
-      :to="this.config.sumbitEventLink"
+      :to="this.config.submitEventLink"
     />
   </div>
 </template>
