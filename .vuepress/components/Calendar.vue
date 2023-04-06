@@ -270,6 +270,7 @@ $lightColor = lighten($headerColor, 90%)
 $headersTransition = all 0.25s ease-out
 
 table
+  padding-top 8rem
   width 100%
   display inline-table
   border-spacing 0
@@ -365,7 +366,7 @@ table
     margin-top 100px
   .hero
     width 100%
-    padding-top $navbarHeight
+    top $navbarHeight
     left 0
     pointer-events none
     position fixed
@@ -404,6 +405,7 @@ table
               transform rotate(180deg)
 
 .calendar_hero
+  margin-top 3rem
   font-size 3rem
   padding 0rem 0rem 6rem 3rem
   min-height 4rem
