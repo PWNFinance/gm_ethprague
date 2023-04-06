@@ -6,10 +6,10 @@ is the backbone of the ecosystem. We invite projects, individuals and anyone
 interested in fruitful and educational discussions to join us.
 
 This repository contains the code for the website, which can be reached at
-[https://gm.events](https://gm.events).
+[https://rio.gm.events](https://rio.gm.events).
 
 ## Contributing
 For submitting new events please do either of these:
 1) create a PR 
 2) create an issue 
-3) submit a form: https://gmevents.typeform.com/amsterdam
+3) submit a form: https://gmevents.typeform.com/riodejaneiro

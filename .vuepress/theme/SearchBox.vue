@@ -152,7 +152,7 @@ $border-radius = 10px
     color transparent
     cursor pointer
     outline none
-    background #000 url('~/search.svg') no-repeat 8px center
+    background #000 url('/search.svg') no-repeat 8px center
     border 1px solid #000
     padding 9px
     border-radius 29px

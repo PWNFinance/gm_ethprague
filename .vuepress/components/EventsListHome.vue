@@ -45,146 +45,175 @@
     </div> -->
 
     <div ref="wrapper" class="wrapper" :class="{ filtering }">
-      <div v-for="day in days" :key="day">
+      <!-- <div v-for="day in days" :key="day"> -->
         <!-- <h3 class="date-sticky">
           <DateTime :date="day">
           <svg slot="before" enable-background="new 0 0 488.152 488.152" height="488.152" viewBox="0 0 488.152 488.152" width="488.152" xmlns="http://www.w3.org/2000/svg"><path d="m177.854 269.311c0-6.115-4.96-11.069-11.08-11.069h-38.665c-6.113 0-11.074 4.954-11.074 11.069v38.66c0 6.123 4.961 11.079 11.074 11.079h38.665c6.12 0 11.08-4.956 11.08-11.079z"/><path d="m274.483 269.311c0-6.115-4.961-11.069-11.069-11.069h-38.67c-6.113 0-11.074 4.954-11.074 11.069v38.66c0 6.123 4.961 11.079 11.074 11.079h38.67c6.108 0 11.069-4.956 11.069-11.079z"/><path d="m371.117 269.311c0-6.115-4.961-11.069-11.074-11.069h-38.665c-6.12 0-11.08 4.954-11.08 11.069v38.66c0 6.123 4.96 11.079 11.08 11.079h38.665c6.113 0 11.074-4.956 11.074-11.079z"/><path d="m177.854 365.95c0-6.125-4.96-11.075-11.08-11.075h-38.665c-6.113 0-11.074 4.95-11.074 11.075v38.653c0 6.119 4.961 11.074 11.074 11.074h38.665c6.12 0 11.08-4.956 11.08-11.074z"/><path d="m274.483 365.95c0-6.125-4.961-11.075-11.069-11.075h-38.67c-6.113 0-11.074 4.95-11.074 11.075v38.653c0 6.119 4.961 11.074 11.074 11.074h38.67c6.108 0 11.069-4.956 11.069-11.074z"/><path d="m371.117 365.95c0-6.125-4.961-11.075-11.069-11.075h-38.67c-6.12 0-11.08 4.95-11.08 11.075v38.653c0 6.119 4.96 11.074 11.08 11.074h38.67c6.108 0 11.069-4.956 11.069-11.074z"/><path d="m440.254 54.354v59.05c0 26.69-21.652 48.198-48.338 48.198h-30.493c-26.688 0-48.627-21.508-48.627-48.198v-59.262h-137.44v59.262c0 26.69-21.938 48.198-48.622 48.198h-30.499c-26.685 0-48.336-21.508-48.336-48.198v-59.05c-23.323.703-42.488 20.002-42.488 43.723v346.061c0 24.167 19.588 44.015 43.755 44.015h389.82c24.131 0 43.755-19.889 43.755-44.015v-346.061c0-23.721-19.164-43.02-42.487-43.723zm-14.163 368.234c0 10.444-8.468 18.917-18.916 18.917h-327.031c-10.448 0-18.916-8.473-18.916-18.917v-178.753c0-10.448 8.467-18.921 18.916-18.921h327.03c10.448 0 18.916 8.473 18.916 18.921z"/><path d="m96.128 129.945h30.162c9.155 0 16.578-7.412 16.578-16.567v-96.805c0-9.156-7.423-16.573-16.578-16.573h-30.162c-9.156 0-16.578 7.417-16.578 16.573v96.805c0 9.155 7.422 16.567 16.578 16.567z"/><path d="m361.035 129.945h30.162c9.149 0 16.572-7.412 16.572-16.567v-96.805c.001-9.156-7.422-16.573-16.572-16.573h-30.162c-9.154 0-16.577 7.417-16.577 16.573v96.805c0 9.155 7.423 16.567 16.577 16.567z"/></svg>
           </DateTime>
-        </h3> -->
-
-        <div v-for="event in events" v-if="day.toString().replace('T01', 'T00') === event.frontmatter.date.toString()"
+        </h3> -->          
+        
+        <div v-for="event in events" 
           :key="event.key"
         >
           <EventPreview :event="event"/>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 </template>
 
 <script>
-import DateTime from './Event/DateTime.vue'
-import EventPreview from './EventPreview.vue'
-import { capitalizeWord } from './../theme/util.js'
+import DateTime from "./Event/DateTime.vue";
+import EventPreview from "./EventPreview.vue";
+import { capitalizeWord } from "./../theme/util.js";
+import config from "../config";
+
+const formatDate = (year, month, day) => {
+  // Convert each argument to a two-digit string
+  const yearStr = year.toString().padStart(4, "0");
+  const monthStr = month.toString().padStart(2, "0");
+  const dayStr = day.toString().padStart(2, "0");
+
+  // Return the formatted date string
+  return `${yearStr}-${monthStr}-${dayStr}`;
+};
 
 export default {
   name: "EventsListHome",
   components: { DateTime },
   data: () => ({
-    firstDay: new Date('2022-06-03'),
-    duration: 12,
+    firstDay: new Date(
+      formatDate(
+        config.startDate.year,
+        config.startDate.month,
+        config.startDate.day
+      )
+    ),
+    duration: config.duarationInDays,
     descending: false,
     categories: [],
     events: [],
     days: [],
     filtering: false,
     // This is calculated from the transition time of the .wrapper el
-    animationDuration: 0
+    animationDuration: 0,
   }),
   methods: {
-    setEvents () {
-      let events = this.$site.pages.map(event => {
-        let eventName = event.frontmatter.name
-        if (eventName && eventName !== 'Sample Template') {
-          let category = capitalizeWord(event.frontmatter.category)
-          event.frontmatter.category = category
-          this.setFilter(category)
-          event.day = setEventDay(event.frontmatter.date)
-          return event
+    setEvents() {
+      let events = this.$site.pages.map((event) => {
+        let eventName = event.frontmatter.name;
+        if (eventName && eventName !== "Sample Template") {
+          let category = capitalizeWord(event.frontmatter.category);
+          event.frontmatter.category = category;
+          this.setFilter(category);
+          event.day = setEventDay(event.frontmatter.date);
+          return event;
         }
-      })
+      });
       // Remove nulls
-      events = events.filter(event => event)
+      events = events.filter((event) => event);
       // Sort by date
-      events = events.sort((a, b) => a.day - b.day)
-      this.events = events
+      events = events.sort((a, b) => a.day - b.day);
+      console.log('events: ', events);
+      this.events = events;
     },
-    setFilter (category) {
-      let categories = this.categories
+    setFilter(category) {
+      let categories = this.categories;
       if (categories.indexOf(category) === -1) {
-        categories.push(category)
+        categories.push(category);
         categories.sort((a, b) => {
-          if (a < b) return -1
-          if (a > b) return 1
-          return 0
-        })
+          if (a < b) return -1;
+          if (a > b) return 1;
+          return 0;
+        });
       }
     },
-    filterEvents (category, featured) {
-      this.animateContent()
+    filterEvents(category, featured) {
+      this.animateContent();
       // Wait for the animation hiding the content to finish
+      console.log('this.events: ', this.events);
       setTimeout(() => {
-        this.setEvents()
-        if (category !== 'All') {
+        this.setEvents();
+        if (category !== "All") {
           if (featured) {
-            this.events = this.events.filter(event => {
-              return (event.frontmatter.category === category || category == '') && event.frontmatter.featured === true
-            })
+            this.events = this.events.filter((event) => {
+              return (
+                (event.frontmatter.category === category || category == "") &&
+                event.frontmatter.featured === true
+              );
+            });
           } else {
-            this.events = this.events.filter(event => {
-              return event.frontmatter.category === category
-            })
+            this.events = this.events.filter((event) => {
+              return event.frontmatter.category === category;
+            });
           }
         }
-        this.days = []
-        this.setDays()
-        if (this.descending) this.days.reverse()
-      }, this.animationDuration)
+        this.days = [];
+        this.setDays();
+        if (this.descending) this.days.reverse();
+      }, this.animationDuration);
     },
-    reverseDates () {
-      this.animateContent()
+    reverseDates() {
+      this.animateContent();
       // Wait for the animation hiding the content to finish
       setTimeout(() => {
-        this.descending = !this.descending
-        this.days.reverse()
-      }, this.animationDuration)
+        this.descending = !this.descending;
+        this.days.reverse();
+      }, this.animationDuration);
     },
-    setDays () {
-      let nextDay = ''
+    setDays() {
+      let nextDay = "";
       for (let i = 0; i < this.duration; i++) {
-        nextDay = addDays(this.firstDay, i)
-        nextDay = nextDay.toJSON()
-        this.days.push(nextDay)
-        this.removeEmptyDay(nextDay)
+        nextDay = addDays(this.firstDay, i);
+        nextDay = nextDay.toJSON();
+        this.days.push(nextDay);
+        //this.removeEmptyDay(nextDay);
       }
     },
     // Remove the days without events
-    removeEmptyDay (day) {
-      let count = 0
-      this.events.map(event => {
-        if (day.toString().replace('T01', 'T00') === event.frontmatter.date.toString()) count++
-      })
-      if (count === 0) this.days.splice(-1, 1)
+    removeEmptyDay(day) {
+      let count = 0;
+      this.events.map((event) => {
+        if (
+          day.toString().replace("T01", "T00") ===
+          event.frontmatter.date.toString()
+        )
+          count++;
+      });
+      if (count === 0) this.days.splice(-1, 1);
     },
-    getAnimationDuration () {
-      let duration = parseFloat(
-        window.getComputedStyle(this.$refs.wrapper)['transitionDuration']
-      ) * 1000
-      return duration
+    getAnimationDuration() {
+      let duration =
+        parseFloat(
+          window.getComputedStyle(this.$refs.wrapper)["transitionDuration"]
+        ) * 1000;
+      return duration;
     },
-    animateContent () {
+    animateContent() {
       // The .wrapper el gets the class .filtering when this.filtering is true
-      this.filtering = true
+      this.filtering = true;
       // Give some extra ms for the filters to process
-      let delay = this.animationDuration + 150
-      setTimeout(() => { this.filtering = false }, delay)
-    }
+      let delay = this.animationDuration + 150;
+      setTimeout(() => {
+        this.filtering = false;
+      }, delay);
+    },
   },
-  mounted () {
-    this.animationDuration = this.getAnimationDuration()
-    this.filterEvents('All')
-  }
+  mounted() {
+    this.animationDuration = this.getAnimationDuration();
+    this.filterEvents("All");
+  },
+};
+
+function setEventDay(date) {
+  let day = new Date(date);
+  return day.getUTCDay();
 }
 
-function setEventDay (date) {
-  let day = new Date(date)
-  return day.getUTCDay()
-}
-
-function addDays (date, days) {
-  let nextDay = new Date(date)
-  nextDay = nextDay.setDate(date.getUTCDate() + days)
-  return new Date(nextDay)
+function addDays(date, days) {
+  let nextDay = new Date(date);
+  nextDay = nextDay.setDate(date.getUTCDate() + days);
+  return new Date(nextDay);
 }
 </script>
 

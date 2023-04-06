@@ -12,7 +12,11 @@
     </div>
 
     <h1 class="content__title">{{ data.name }}</h1>
-    <DateTime :isOneLine="true"/>
+  
+    <div class="content__date-and-add-to-calendar">
+      <CalendarHelper :event="$page" />
+      <DateTime :isOneLine="true"/>
+    </div>
 
     <div class="category">
       <Badge :text="capitalizeWord(data.category)"/>
@@ -47,10 +51,11 @@ import TicketsLink from './TicketsLink'
 import { capitalizeWord } from './../../theme/util.js'
 import Button from '../Button.vue'
 import Badge from '../../theme/Badge.vue'
+import CalendarHelper from '../CalendarHelper.vue'
 const debounce = require('debounce')
 
 export default {
-  components: { DateTime, MapLink, Speakers, Synopsis, TicketsLink },
+  components: { DateTime, MapLink, Speakers, Synopsis, TicketsLink, CalendarHelper, Badge },
   computed: {
     data () {
       return this.$page.frontmatter
@@ -156,5 +161,10 @@ h2
   flex-wrap wrap
   gap 1rem
 
+.content__date-and-add-to-calendar
+  display flex
+  justify-content center
+  align-items center
+  gap 0.5rem
 
 </style>

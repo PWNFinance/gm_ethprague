@@ -24,21 +24,20 @@
 </template>
 
 <script>
-import ExternalLink from '../Utils/ExternalLink'
+import ExternalLink from "../Utils/ExternalLink";
 
 export default {
   components: { ExternalLink },
   computed: {
-    price () {
-      let price = this.$page.frontmatter.price
+    price() {
+      let price = this.$page.frontmatter.price;
       if (!price || price === 0) {
-        return 'Free'
+        return "Free";
       }
-      price += ' €'
-      return price
-    }
-  }
-}
+      return price;
+    },
+  },
+};
 </script>
 
 <style lang="stylus">
