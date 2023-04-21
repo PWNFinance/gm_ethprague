@@ -110,6 +110,8 @@ export default {
       });
       // Remove nulls
       events = events.filter((event) => event);
+      // sort by time
+      events = events.sort((a, b) => Number(a.frontmatter.time.toString().slice(0, 2)) - Number(b.frontmatter.time.toString().slice(0, 2)));
       // Sort by date
       events = events.sort((a, b) => a.day - b.day);
       this.events = events;
