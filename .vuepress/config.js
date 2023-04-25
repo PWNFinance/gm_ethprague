@@ -2,7 +2,7 @@ module.exports = {
   base: "/",
   title: "Amsterdam GM Events",
   heading: "GM Amsterdam 2023",
-  dateSubheading: "15. - 21. May 2023",
+  dateSubheading: "15. - 22. May 2023",
   subHeading:
     "We're bringing the Ethereum community to Amsterdam! This website allows anyone to add and update their side event happening around EthDam conference.",
   calendarHeading: "May 2023",
@@ -13,14 +13,14 @@ module.exports = {
     year: 2023,
   },
   endDate: {
-    day: 21,
+    day: 22,
     month: 5,
     year: 2023,
   },
   daysInFirstMonth: 31,
   startHour: 8,
   endHour: 24,
-  duarationInDays: 7,
+  duarationInDays: 8,
   dayNames: [
     "Monday",
     "Tuesday",
@@ -29,6 +29,7 @@ module.exports = {
     "Friday",
     "Saturday",
     "Sunday",
+    "Monday",
   ],
   layout: 0, // 0 - banner layout, 1 - venue layout
   bannerPath: "ethdam.png", // only if banner layout
