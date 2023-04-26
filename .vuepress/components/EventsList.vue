@@ -216,7 +216,14 @@ export default {
 
 function setEventDay(date) {
   let day = new Date(date);
-  return day.getUTCDay();
+  // return how many days from firstDay
+  return Math.floor((day - new Date(
+      formatDate(
+        config.startDate.year,
+        config.startDate.month,
+        config.startDate.day
+      )
+    )) / 86400000);
 }
 
 function addDays(date, days) {

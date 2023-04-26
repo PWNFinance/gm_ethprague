@@ -115,6 +115,7 @@ export default {
       // Sort by date
       events = events.sort((a, b) => a.day - b.day);
       this.events = events;
+      console.log(this.events)
     },
     setFilter(category) {
       let categories = this.categories;
@@ -205,7 +206,14 @@ export default {
 
 function setEventDay(date) {
   let day = new Date(date);
-  return day.getUTCDay();
+  // return how many days from firstDay
+  return Math.floor((day - new Date(
+      formatDate(
+        config.startDate.year,
+        config.startDate.month,
+        config.startDate.day
+      )
+    )) / 86400000);
 }
 
 function addDays(date, days) {
