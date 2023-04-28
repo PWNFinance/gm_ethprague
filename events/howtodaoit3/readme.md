@@ -33,7 +33,7 @@ title: How to DAO it 3
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: 
+description: Unconference, using open space technology
 
 #####################
 ### EVENT DETAILS ###
