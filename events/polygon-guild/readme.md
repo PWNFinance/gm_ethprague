@@ -48,9 +48,10 @@ name: Polygon Guild Amsterdam Connect & Workshops Day | EHTDam Edition
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
-  - - Co-hack with our community 
-  - - Connect & meet builders 
-  - - Join 4 workshops
+  - 🧑‍💻 Co-hack, Workshops & Fun Day
+  - Co-hack with our community 
+  - Connect & meet builders 
+  - Join 4 workshops
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
