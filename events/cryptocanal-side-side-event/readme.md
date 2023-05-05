@@ -48,7 +48,7 @@ name: CryptoCanal Side Side Event
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
-  - Disclaimer: CryptoCanal Side Side Event is not an event, but a state of mind. It was born at ETHPorto, as an experimental (lazy) way to collect crypto folks around us and send updates to the Telegram groupchat on lunch meetups, bar activities and who’s where doing what. 
+  - Disclaimer - CryptoCanal Side Side Event is not an event, but a state of mind. It was born at ETHPorto, as an experimental (lazy) way to collect crypto folks around us and send updates to the Telegram groupchat on lunch meetups, bar activities and who’s where doing what. 
   - This time, it is re-born with ETHDam. Join the decentralized shenanigans.
 
 # The date should be in the format year-month-day (ISO 8601).
