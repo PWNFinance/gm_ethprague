@@ -33,7 +33,7 @@ title: CryptoCanal Side Side Event
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: Disclaimer: CryptoCanal Side Side Event is not an event, but a state of mind. It was born at ETHPorto, as an experimental (lazy) way to collect crypto folks around us and send updates to the Telegram groupchat on lunch meetups, bar activities and who’s where doing what. 
+description: Disclaimer - CryptoCanal Side Side Event is not an event, but a state of mind. It was born at ETHPorto, as an experimental (lazy) way to collect crypto folks around us and send updates to the Telegram groupchat on lunch meetups, bar activities and who’s where doing what. 
 
 #####################
 ### EVENT DETAILS ###
