@@ -106,19 +106,20 @@ speakers:
   -
     name: Yves Boutellier
     title: Co-founder
-    company: swissDAO, Daoify
+    company: swissDAO, DAOify
     companyURL: https://swissdao.space/
     twitter: boutellier_yves
     bio: Biologist turned web3 developer initiated swissDAO to foster collaboration using DAO technologies and frameworks.
   -
-    name: Vitalik Buterin
+    name: Amin B.
     title: Co-founder
-    company: Ethereum
-    companyURL: https://ethereum.org/
-    twitter: VitalikButerin
-    website: https://vitalik.ca
-    bio: Vitalik Buterin is a Russian-Canadian programmer and writer primarily
-      known as a co-founder of Ethereum and as a co-founder of Bitcoin Magazine.
+    company: DAOify
+    bio: <fill in>
+  -
+    name: Zaniyar Jahany
+    title: Founder
+    company: Metaroom
+    bio: <fill in>
   -
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---
