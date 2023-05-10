@@ -28,7 +28,7 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: Web3 Startup Pitches and DeFi Panel
+title: DAO, DeFi and Metaverse Talks
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
@@ -40,7 +40,7 @@ description: swissDAO, DAOify, and MetaRoom will be presenting their pitches, of
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: Web3 Startup Pitches and DeFi Panel
+name: DAO, DeFi and Metaverse Talks
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
@@ -48,10 +48,11 @@ name: Web3 Startup Pitches and DeFi Panel
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
-  - Learn more about how swissDAO changes the Startup Landscape and get Degen with a DeFi Panel
+  - Learn more about how swissDAO changes the Startup Landscape in Switzerland and get Degen with a DeFi Panel
+  - Founder of superkey talking about risk in blockchain
   - swissDAO, DAOify, and MetaRoom will be presenting their pitches, offering a glimpse into the innovative solutions they're 
     bringing to the table.  Plus, join in on the action-packed DeFi risk panel featuring SuperKey and local risk teams, where you'll 
-    get the inside scoop on the latest developments and strategies for managing risk in the fast-paced DeFi landscape. 
+    get the insights on the latest developments and strategies for managing risk in the fast-paced DeFi landscape. 
   - And don't forget about the networking opportunities - this is your chance to connect with like-minded individuals and expand your 
     professional circle. 
 
@@ -65,9 +66,9 @@ endDate: 2023-05-18
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '09:00'
-time: '18:00'
+time: '16:00'
 # Time when the event ends. Can be left empty.
-endTime: '23:00'
+endTime: '18:00'
 
 # The URL where to acquire the tickets. Can be left empty.
 tickets: https://www.meetup.com/swissdao/events/293284249/?isFirstPublish=true
@@ -104,22 +105,35 @@ category: event
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
   -
+    name: Naveen Mishra
+    title: Founder
+    company: SuperKey
+    companyURL: https://superkeyhq.com
+    twitter: _naveenmishra
+    website: https://n10a.com
+    bio: Data analyst by training, Naveen spends his time making models for defi
+  -
     name: Yves Boutellier
-    title: Co-founder
+    title: Co-founder, Core-Contributor, Full Stack Web3 Developer
     company: swissDAO, DAOify
     companyURL: https://swissdao.space/
     twitter: boutellier_yves
-    bio: Biologist turned web3 developer initiated swissDAO to foster collaboration using DAO technologies and frameworks.
+    website: https://www.linkedin.com/in/yvesboutellier/
+    bio: Computational Biologist turned web3 developer initiated swissDAO to foster collaboration using DAO technologies and frameworks.
   -
     name: Amin B.
-    title: Co-founder
-    company: DAOify
-    bio: <fill in>
+    title: Co-founder, Core-Contributor, Full Stack Web 3 Developer
+    company: Daoify, swissDAO
+    companyURL: https://www.linkedin.com/company/swissdaospace/
+    website: https://www.linkedin.com/in/aminb/
+    bio: Co-Founder swissDAO & Daoify // Building DeFi dApps @Grizzly.fi // MEV @Shard // DeFi Degen
   -
     name: Zaniyar Jahany
-    title: Founder
-    company: Metaroom
-    bio: <fill in>
+    title: Co-founder
+    company: MetaRoom, swissDAO
+    companyURL: https://MetaRoom.city
+    website: https://www.linkedin.com/in/zaniyar-jahany-a5224387/
+    bio: Science Associate in Blockchain x AR at the university of applied science in Zürich
   -
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---
