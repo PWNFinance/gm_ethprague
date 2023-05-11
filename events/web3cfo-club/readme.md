@@ -51,7 +51,7 @@ synopsis:
   - With our club rapidly growing to reach 450+ members, we’re hosting an exclusive networking event where you can meet and interact with other leaders of the web3 industry. Our club consists of C-level executives from companies like The Graph, Aave, Cryptio, Rarible, Ledger, The Sandbox, Safe, Near Foundation, and many more. 
   - This meetup will allow you to interact with leading web3 CFOs to build lasting relationships in real life. Full-course dinner meals & beverages will be served in an informal setup, and the agenda of the meetup will be announced in due course. 
   - We kindly ask that you RSVP as soon as possible to secure your spot, as the venue has limited capacity. 
-  - About web3CFO club A - community of operations and finance leaders in web3 curated by Request Finance, the industry leader in crypto invoicing, payroll, and expenses. Our 450+ members share best practices on web3 operations and recommendations on tooling to allow you to scale your web3 business in a compliant way.
+  - About web3CFO club - A community of operations and finance leaders in web3 curated by Request Finance, the industry leader in crypto invoicing, payroll, and expenses. Our 450+ members share best practices on web3 operations and recommendations on tooling to allow you to scale your web3 business in a compliant way.
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
