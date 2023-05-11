@@ -48,7 +48,9 @@ name: Meetup - A new utility for your digital collectibles
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
-  - Join us in the st-Art studio in Amsterdam for an exclusive ETHDam side event dedicated to digital art and collectibles enthusiasts. Criptorefills, in the st-Art studio, proposes an amazing event dedicated to all the members, with lovely surprises and amazing art displayed by st-Art artists. Don't miss this unique opportunity to be a part of the vibrant digital art scene in Amsterdam. Reserve your spot today! Special Gift - All participants will receive a special gift from Cryptorefills; find out everything about it at the launch of Atomicrails!
+  - Join us in the st-Art studio in Amsterdam for an exclusive ETHDam side event dedicated to digital art and collectibles enthusiasts.
+  - Criptorefills, in the st-Art studio, proposes an amazing event dedicated to all the members, with lovely surprises and amazing art displayed by st-Art artists. Don't miss this unique opportunity to be a part of the vibrant digital art scene in Amsterdam. Reserve your spot today! 
+  - Special Gift - All participants will receive a special gift from Cryptorefills; find out everything about it at the launch of Atomicrails!
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
