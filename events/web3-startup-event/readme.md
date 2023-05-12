@@ -104,37 +104,7 @@ category: event
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
-  -
-    name: Naveen Mishra
-    title: Founder
-    company: SuperKey
-    companyURL: https://superkeyhq.com
-    twitter: _naveenmishra
-    website: https://n10a.com
-    bio: Data analyst by training, Naveen spends his time making models for defi
-  -
-    name: Yves Boutellier
-    title: Co-founder, Core-Contributor, Full Stack Web3 Developer
-    company: swissDAO, DAOify
-    companyURL: https://swissdao.space/
-    twitter: boutellier_yves
-    website: https://www.linkedin.com/in/yvesboutellier/
-    bio: Computational Biologist turned web3 developer initiated swissDAO to foster collaboration using DAO technologies and frameworks.
-  -
-    name: Amin B.
-    title: Co-founder, Core-Contributor, Full Stack Web 3 Developer
-    company: Daoify, swissDAO
-    companyURL: https://www.linkedin.com/company/swissdaospace/
-    website: https://www.linkedin.com/in/aminb/
-    bio: Co-Founder swissDAO & Daoify // Building DeFi dApps @Grizzly.fi // MEV @Shard // DeFi Degen
-  -
-    name: Zaniyar Jahany
-    title: Co-founder
-    company: MetaRoom, swissDAO
-    companyURL: https://MetaRoom.city
-    website: https://www.linkedin.com/in/zaniyar-jahany-a5224387/
-    bio: Science Associate in Blockchain x AR at the university of applied science in Zürich
-  -
+
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---
 
