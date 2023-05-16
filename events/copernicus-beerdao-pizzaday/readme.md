@@ -33,7 +33,7 @@ title: Copernicus Beer DAO+Pizza Day = The Bitcoin Museum (v0.1)
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: On the screens of Open Space Gallery, on Pizza Day Copernicus Beer DAO opens the Bitcoin Museum (v0.1). 
+description: On the screens of Open Space Gallery, on Pizza Day, Copernicus Beer (.xyz) DAO opens the Bitcoin Museum (v0.1). 
 
 #####################
 ### EVENT DETAILS ###
@@ -48,8 +48,8 @@ name: Copernicus Beer DAO+Pizza Day = The Bitcoin Museum (v0.1)
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
-  - On the screens of Open Space Gallery, on Pizza Day Copernicus Beer DAO opens the Bitcoin Museum (v0.1). 
-  - Showing fascinating artifacts and stories from the history of Bitcoin, happily celebrating the gift of decentralization while in the meantime serving some decent slices of pizza and cans of Copernicus Beers (by QR15 and QR21, batch 7) to all visitors. Feel free to drop by!
+  - On the screens of Open Space Gallery, on Pizza Day, Copernicus Beer (.xyz) DAO opens the Bitcoin Museum (v0.1). 
+  - Showing fascinating artifacts and stories from the history of Bitcoin, happily celebrating the gift of decentralization while in the meantime serving some decent slices of pizza and cans of Copernicus Beers (by #QR15 and #QR21, batch #7) to all visitors. Feel free to drop by!
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
