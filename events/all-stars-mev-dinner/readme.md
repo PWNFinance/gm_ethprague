@@ -28,7 +28,7 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: ALL STARS MEV DINNER: WHAT'S NEXT FOR MEV IN DEFI?
+title: ALL STARS MEV DINNER - WHAT'S NEXT FOR MEV IN DEFI?
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
@@ -40,7 +40,7 @@ description: Don't miss this unique opportunity to expand your knowledge and con
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: ALL STARS MEV DINNER: WHAT'S NEXT FOR MEV IN DEFI?
+name: ALL STARS MEV DINNER - WHAT'S NEXT FOR MEV IN DEFI?
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
