@@ -49,7 +49,7 @@ name: Copernicus Beer DAO+Pizza Day = The Bitcoin Museum (v0.1)
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   - On the screens of Open Space Gallery, on Pizza Day, Copernicus Beer (.xyz) DAO opens the Bitcoin Museum (v0.1). 
-  - Showing fascinating artifacts and stories from the history of Bitcoin, happily celebrating the gift of decentralization while in the meantime serving some decent slices of pizza and cans of Copernicus Beers (by #QR15 and #QR21, batch #7) to all visitors. Feel free to drop by!
+  - Showing fascinating artifacts and stories from the history of Bitcoin, happily celebrating the gift of decentralization while in the meantime serving some decent slices of pizza and cans of Copernicus Beers (by QR15 and QR21, batch 7) to all visitors. Feel free to drop by!
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
