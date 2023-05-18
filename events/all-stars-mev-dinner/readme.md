@@ -51,14 +51,14 @@ synopsis:
   - Don't miss this unique opportunity to expand your knowledge and connect with some of the brightest minds in the world of MEV and DeFi trading! 
   - bloXroute Labs and EigenPhi have teamed up to bring you an exclusive workshop and networking All-Stars dinner where you'll have the chance to rub shoulders with renowned DeFi trading experts and hear presentations on the latest MEV trends! 
   - Speakers include - Uri (bloXroute), Mars (EighePhi), Thogard (FastLane), Luis (Shutter), Julian Ma (Ethereum Foundation), Proto (OP Labs). 
-  - We’ll discuss
-    1)How is MEV affecting DeFi? 
-    2)Who’s actually extracting the value here, and is that good or bad? 
-    3)What other approaches are being explored on Optimism and Polygon and by Shutter? 
-  - We’ll also discuss 
-    1)Is it moral to back-run the waiter carrying tapas?
-    2)Which local beer is better? 
-    3)Can the bartender make any good cocktails? 🍸 🍸 🍸
+  - We’ll discuss:
+  - 1) How is MEV affecting DeFi? 
+  - 2) Who’s actually extracting the value here, and is that good or bad? 
+  - 3) What other approaches are being explored on Optimism and Polygon and by Shutter? 
+  - We’ll also discuss: 
+  - 1) Is it moral to back-run the waiter carrying tapas?
+  - 2) Which local beer is better? 
+  - 3) Can the bartender make any good cocktails? 🍸 🍸 🍸
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
