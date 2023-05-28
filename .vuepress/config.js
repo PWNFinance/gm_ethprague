@@ -1,27 +1,30 @@
 module.exports = {
   base: "/",
-  title: "Amsterdam GM Events",
-  heading: "GM Amsterdam 2023",
-  dateSubheading: "15. - 22. May 2023",
+  title: "Prague GM Events",
+  heading: "GM Prague 2023",
+  dateSubheading: "2. - 11. June 2023",
   subHeading:
-    "We're bringing the Ethereum community to Amsterdam! This website allows anyone to add and update their side event happening around EthDam conference.",
-  calendarHeading: "May 2023",
-  submitEventLink: "https://gmevents.typeform.com/amsterdam",
+    "We're bringing the Ethereum community to Prague! This website allows anyone to add and update their side event happening around DeFi Summit and ETHPrague conference & hackathon.",
+  calendarHeading: "June 2023",
+  submitEventLink: "https://gmevents.typeform.com/ethprague",
   startDate: {
-    day: 15,
-    month: 5,
+    day: 2,
+    month: 6,
     year: 2023,
   },
   endDate: {
-    day: 22,
-    month: 5,
+    day: 11,
+    month: 6,
     year: 2023,
   },
-  daysInFirstMonth: 31,
+  daysInFirstMonth: 30,
   startHour: 8,
   endHour: 24,
-  duarationInDays: 8,
+  duarationInDays: 10,
   dayNames: [
+    "Friday",
+    "Saturday",
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
@@ -29,10 +32,9 @@ module.exports = {
     "Friday",
     "Saturday",
     "Sunday",
-    "Monday",
   ],
   layout: 0, // 0 - banner layout, 1 - venue layout
-  bannerPath: "ethdam.png", // only if banner layout
+  bannerPath: "DeFiSummit_ETHPrague.jpg", // only if banner layout
   venues: [
     {
       name: "Paralelni Polis",
@@ -66,8 +68,12 @@ module.exports = {
         link: "/calendar/",
       },
       {
-        text: "ETHDam",
-        link: "https://www.ethdam.com/",
+        text: "ETHPrague",
+        link: "https://www.ethprague.com/",
+      },
+       {
+        text: "DeFi Summit",
+        link: "https://praguedefisummit.com/",
       },
     ],
     logo: "logo_gm_events.svg",
