@@ -52,10 +52,10 @@ synopsis:
   - Apply to the program, and if you get shortlisted, you will be pitching in person to a room full of marquee investors. (watch this space to know which investors will be there👀) 
   - All of the key ecosystem leaders and investors will be present there. So, if you're a founder looking to raise early-stage capital from marquee VCs and angels this is the place to be. 
   - Why you should apply? 
-  - Get access to various ecosystem support like grants, credits, etc. 💳 
-  - Network with fellow founders 🕸️ 
-  - Tap into our mentor network and get feedback 🧠 
-  - Shot at getting funded 💸 
+  -     1. Get access to various ecosystem support like grants, credits, etc. 💳 
+  -     2. Network with fellow founders 🕸️ 
+  -     3. Tap into our mentor network and get feedback 🧠 
+  -     4. Shot at getting funded 💸 
   - Venue📍 Mississippi House 
   - Date of the demo day📅 Sun, June 11, 2023 
   - Join the BuidlersTribe Prague Chapter here to meet local founders and have a Prague support group!
