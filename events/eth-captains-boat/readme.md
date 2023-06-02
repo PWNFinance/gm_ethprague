@@ -40,7 +40,7 @@ description: GM, crypto sailors! Come to celebrate with us the final of EthPragu
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: Buidl.so Demo Day ETH Prague
+name: ETH Captains' Boat 🏴‍☠️
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
