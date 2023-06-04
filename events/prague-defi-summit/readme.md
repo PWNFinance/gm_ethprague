@@ -57,7 +57,7 @@ synopsis:
 date: 2023-06-08
 # The date when the event ends. Can be left empty or set to the same day the
 # event starts.
-endDate: 2023-06-9
+endDate: 2023-06-09
 
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
