@@ -13,13 +13,13 @@
     </span>
 
     <!-- Link to ticket sale -->
-    <span v-if="$page.frontmatter.tickets" class="ticket--website">
+    <!-- <span v-if="$page.frontmatter.tickets" class="ticket--website">
       <ExternalLink
         :url="$page.frontmatter.tickets"
         caption="Website"
         indicator="true"
       />
-    </span>
+    </span> -->
   </div>
 </template>
 

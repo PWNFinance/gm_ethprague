@@ -8,9 +8,16 @@
             :endTime="event.frontmatter.endTime"/>
           <CalendarHelper :event="event" class="event-preview_calendar-helper"/>
         </div>
-        <Badge slot="after" :text="event.frontmatter.category" />
-
-        <Badge v-if="event.frontmatter.featured" slot="after" :text="'TOP'" />
+        <div class="event-preview_badge-and-link-to-website">
+          <div>
+            <Badge slot="after" :text="event.frontmatter.category" />
+    
+            <Badge v-if="event.frontmatter.featured" slot="after" :text="'TOP'" />
+          </div>
+          <div class="event-preview_button-attend-event-container">
+            <Button buttonText="Attend event" :to="event.frontmatter.tickets" className="event-preview_button-attend-event"/>
+          </div>
+        </div>
       </div>
 
       
@@ -47,6 +54,7 @@
 import CalendarHelper from "./CalendarHelper.vue";
 import DateTime from "./Event/DateTime.vue";
 import Badge from '../theme/Badge.vue'
+import Button from "./Button.vue";
 
 export default {
   components: { DateTime, CalendarHelper, Badge },
@@ -112,6 +120,14 @@ export default {
     display flex
     justify-content space-between
 
+  &_badge-and-link-to-website
+    display grid
+    grid-template-columns max-content max-content
+    grid-gap 0.7rem
+
+  &_button-attend-event-container
+    align-self: center;
+
 @media(min-width: 1100px)
   .event-preview
     flex-direction: row
@@ -131,4 +147,21 @@ export default {
 
 .event-preview_calendar-helper
   margin-top 1.5rem
+</style>
+
+<style lang="stylus">
+.event-preview_button-attend-event
+  height 18px 
+  font-size 0.9rem     
+  color black
+  line-height 18px
+  padding 0.3em 0.6em 
+  border-radius 3px
+  border 1px solid #01ffe0
+  background: #0fffe5;
+  text-decoration: none !important;
+
+  &:hover 
+    text-decoration: none;
+
 </style>

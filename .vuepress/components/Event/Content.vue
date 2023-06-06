@@ -18,8 +18,11 @@
       <DateTime :isOneLine="true"/>
     </div>
 
-    <div class="category">
+    <div class="content__category-and-link-to-website">
       <Badge :text="capitalizeWord(data.category)"/>
+      <div class="content__button-attend-event-container">
+        <Button buttonText="Attend event" :to="$page.frontmatter.tickets" className="content__button-attend-event"/>
+      </div>
     </div>
 
     <Synopsis/>
@@ -29,13 +32,13 @@
       <Speakers/>
     </div>
 
-    <div class="content__venue"v-if="data.venue || data.address">
+    <div class="content__venue" v-if="data.venue || data.address">
       <h2 v-if="Array.isArray(data.address)">Venues</h2>
       <h2 v-else>Venue</h2>
       <MapLink/>
     </div>
 
-    <div class="content__more-info"v-if="data.tickets">
+    <div class="content__more-info" v-if="data.tickets">
       <h2>More information</h2>
       <TicketsLink/>
     </div>
@@ -167,4 +170,26 @@ h2
   align-items center
   gap 0.5rem
 
+.content__button-attend-event
+  height 18px 
+  font-size 0.9rem     
+  color black
+  line-height 18px
+  padding 0.3em 0.6em 
+  border-radius 3px
+  border 1px solid #01ffe0
+  background: #0fffe5;
+  text-decoration: none !important;
+  
+  &:hover 
+    text-decoration: none;
+
+.content__category-and-link-to-website
+  display flex
+  justify-content center
+  gap 0.7rem
+  margin-top: 1rem;
+
+.content__button-attend-event-container
+  align-self: center;
 </style>
