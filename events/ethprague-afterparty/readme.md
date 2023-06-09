@@ -48,11 +48,11 @@ name: ETHPrague afterparty
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
-  - The official afterparty of the ETHPrague conference is happening this Sunday 11th on the Stvanice island in Bike Jesus. Come and enjoy the last night after the conference and the hackathon with your frens while listening to electronic music from local DJs.
+  - The official afterparty of the ETHPrague conference is happening this Sunday 11th on the Stvanice island in Bike Jesus. Come and enjoy the last night after the conference and the hackathon with your frens while listening to electronic music from local DJs. This event is free with free drinks for EthPrague attendees. 
   - DJs - Teresi, Kirill Astra, Mutuju, St.Jakob
   - 6 - 10 PM outside
   - 10 PM - 2 AM inside
-  - Free drinks for EthPrague attendees are powered by ENS and PWN.
+  - Powered by ENS and PWN.
   - See you on the dancefloor! 💃🕺🏼
 
 # The date should be in the format year-month-day (ISO 8601).
