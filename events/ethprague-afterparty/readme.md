@@ -52,7 +52,7 @@ synopsis:
   - DJs - Teresi, Kirill Astra, Mutuju, St.Jakob
   - 6 - 10 PM outside
   - 10 PM - 2 AM inside
-  - Powered by ENS and PWN.
+  - Powered by ENS.domains and PWN.xyz.
   - See you on the dancefloor! 💃🕺🏼
 
 # The date should be in the format year-month-day (ISO 8601).
